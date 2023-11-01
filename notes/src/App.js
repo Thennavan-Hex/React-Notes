@@ -1,9 +1,9 @@
-import Signup from './Signup';
+import Signup from './components/auth/Signup';
 
 function App() {
   return (
     <div className="App">
-      <Signup /> {/* Render the Signup component, not Signin */}
+      <Signup />
     </div>
   );
 }
