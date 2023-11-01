@@ -4,22 +4,21 @@
 
 ## Overview
 
-This is an Advanced Notes Web App that allows you to manage your notes efficiently. It provides features like creating, editing, and categorizing notes, user authentication, and stores data in MongoDB.
-
+This is an **Advanced Notes Web App** that allows you to manage your notes efficiently. It provides features like creating, editing, and categorizing notes, user authentication, and stores data in **Firebase**.
 
 ## Features
 
 - Create, edit, and delete notes
 - Categorize and tag notes
 - Search and filter notes
-- User authentication and authorization
+- User authentication and authorization using Firebase
 - Markdown support for note content
-- Data stored in MongoDB
+- Data stored in **Firebase**
 - Responsive design for various devices
 
 ## Installation
 
-To run this project locally, follow these steps:
+To run this project locally with Firebase, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/thennavan-hex/React-Notes.git`
 2. Navigate to the project directory: `cd React-Notes`
@@ -28,9 +27,9 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-Provide usage instructions here. Include any additional details about how to use the app effectively.
+Provide usage instructions here, including how to set up Firebase for your project and any additional details about how to use the app effectively with Firebase.
 
 ## Technologies Used
 
 - React
-- MongoDB
+- Firebase
