@@ -3,10 +3,11 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { getAuth } from "firebase/auth";
 import firebaseApp from '../../firebaseConfig';
 
-export const Signin = () => {
+export const Signup = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    async function SignIn() {
+
+    async function signUp() {
         const auth = getAuth(firebaseApp);
         try {
             await createUserWithEmailAndPassword(auth, email, password);
@@ -15,11 +16,12 @@ export const Signin = () => {
             console.error("Error creating user:", error.message);
         }
     }
+
     return (
         <div>
             <input type="text" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
             <input type="password" placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
-            <button onClick={SignIn}>Sign In</button>
+            <button onClick={signUp}>Sign Up</button>
         </div>
     );
 };
